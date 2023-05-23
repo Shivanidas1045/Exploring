@@ -1,0 +1,192 @@
+/* train box */
+*{
+    padding:0px;
+    margin:0px;
+}
+/* background */
+body{
+    /* background-color:#606060; */
+    background-color:black;
+    z-index:1;
+}
+.moon{
+    height:120px;
+    width:120px;
+    border-radius:50%;
+    background-color:#E8E8E8;
+    margin-top:30px;
+    left:28%;
+    top:-15%;
+    position:relative;
+}
+/* stars */
+.star1,.star2,.star3,.star4,.star5,.star6,.star7,.star8,.star9,.star10{
+
+    border-radius:50%;
+    width:.4rem;
+    height:.4rem;
+    background-color:white;
+    position:absolute;
+    
+    
+}
+.star1,.star2,.star5,.star6,.star9,.star10{
+    animation:stars 1s ease infinite alternate;
+    
+}
+.star3,.star4,.star7,.star8,.star9,.star2{
+    animation:starss 2s ease infinite alternate;
+    
+}
+
+@keyframes stars{
+    from {opacity:0.6;}
+    to {opacity:0.1;}
+    
+}
+
+@keyframes starss{
+    from {opacity:0.7;}
+    to {opacity:0.1;}
+    
+}
+
+.star1{
+    top:30%;
+    left:20%;
+    
+    
+}
+.star2{
+    top:10%;
+    left:20%;
+}
+.star3{
+    top:20%;
+    left:50%;
+}
+.star4{
+    top:26%;
+    left:30%;
+}
+.star5{
+    top:29%;
+    left:50%;
+}
+.star6{
+    top:34%;
+    left:60%;
+}
+.star7{
+    top:23%;
+    left:65%;
+}
+.star8{
+    top:26%;
+    left:80%;
+}
+.star9{
+    top:22%;
+    left:75%;
+}
+.star10{
+    top:28%;
+    left:73%;
+}
+
+
+
+
+
+.train{
+    display:flex;
+    height:200px;
+    width:80%;
+    margin:auto;
+    border:2px solid black;
+    margin-top:130px;
+    background-color:gray;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    
+
+
+
+}
+.train{
+    position:absolute;
+    z-index:3;
+    animation:train 7s linear infinite;
+
+}
+@keyframes train{
+    from{left:-160px;}
+    to{left:100%;}
+}
+
+.first{
+    border:2px solid black;
+    height:150px;
+    width:40%;
+    display:flex;
+    justify-content: space-around;
+    background-color: #0000FF;
+}
+
+/* compartments */
+.first>div{
+    height:28px;
+    width:35px;
+    background-color:gray;
+    margin-top:70px;
+    border:2px solid black;
+    
+}
+
+.second{
+    border:2px solid black;
+    height:150px;
+    width:40%;
+    display:flex;
+    justify-content: space-around;
+    background-color: #0000FF;
+}
+
+
+
+.second>div{
+    height:28px;
+    width:35px;
+    background-color:gray;
+    margin-top:70px;
+    border:2px solid black;
+    
+}
+/* engine */
+.engine{
+    background-color:#0000FF;
+    height:150px;
+    width:30%;
+    border-top-right-radius: 30px;
+    border:2px solid black;
+
+    
+}
+.engine>div{
+    height:100px;
+    width:80px;
+    background-color: gray;
+    margin-left:270px;
+    border-top-right-radius: 30px;
+    border:1px solid black;
+   
+}
+.surface{
+    height:250px;
+    width:100%;
+    border:1px solid black;
+    background-color:#663300;
+    z-index:4;
+    margin-top:330px;
+
+}
