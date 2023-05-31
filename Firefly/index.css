@@ -1,0 +1,485 @@
+*{
+    padding:0px;
+    margin:0px;
+}
+body{
+    background: linear-gradient(to bottom, #cc0099 0%, #9933ff 100%);
+}
+/* jar */
+#jar{
+    height:500px;
+    width:400px;
+    border:5px solid #20B2AA;
+    margin:auto;
+    border-bottom-left-radius: 30%;
+    border-bottom-right-radius: 30%;
+    border-top-right-radius: 10%;
+    border-top-left-radius: 10%;
+    background:linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+}
+/* jarcap */
+#jarcap{
+    height:70px;
+    width:400px;
+    margin:auto;
+    background-color:#8B4513;
+    margin:auto;
+    margin-top:100px;
+    border-top-left-radius: 20%;
+    border-top-right-radius: 20%;
+
+}
+/* firefly1 */
+.firefly1{
+    margin-left:50px;
+    margin-top:100px;
+    animation:fly1 5s infinite linear;
+    
+}
+@keyframes fly1{
+    0%{
+
+        transform:rotate(0deg)
+    
+        
+    }
+    30%{
+        transform:rotate(30deg);
+    
+    }
+    
+    
+    
+}
+
+.head{
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    position: relative;
+    background: black;
+
+
+}
+
+.head::before{
+    left: -34px;
+    border-right-color: transparent;
+    -webkit-transform-origin: right;
+}
+.head::after{
+    left: 38px;
+    border-left-color: transparent;
+    -webkit-transform-origin: left;
+}
+.body{
+    width: 12px;
+    height: 30px;
+    border-radius: 50%;
+    box-shadow:0 0 5px 3px yellow;
+    position: relative;
+    z-index: 2;
+}
+
+
+
+.body{
+    animation:glow 1s infinite;
+}
+@keyframes glow{
+    0%{
+        background-color:yellow;
+    }
+    25%{
+    background-color:orange;
+    }
+    75%{
+        background-color:darkorange;
+    }
+    100%{
+        background:linear-gradient(45deg, rgba(184,148 ,49,.5),#FFFC3B,rgba(184,148 ,49,.5),#C9B52C,#B89438);
+	}
+    
+}
+
+/* firefly2 */
+
+.firefly2{
+    margin-left:90px;
+    margin-top:60px;
+    animation:fly2 7s infinite linear;
+    
+}
+@keyframes fly2{
+    0%{
+
+        transform:rotate(0deg)
+    
+        
+    }
+    30%{
+        transform:rotate(50deg);
+    
+    }
+    60%{
+        transform:rotate(80deg)
+    }
+    
+    
+    
+}
+.head2{
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    position: relative;
+    background:black;
+
+}
+
+.head2::before{
+    left: -34px;
+    border-right-color: transparent;
+    animation:ant_left 1s infinite;
+    -webkit-transform-origin: right;
+}
+.head2::after{
+    left: 38px;
+    border-left-color: transparent;
+    animation:ant_right 1s infinite;
+    -webkit-transform-origin: left;
+}
+.body2{
+    width: 12px;
+    height: 30px;
+    border-radius: 50%;
+    box-shadow:0 0 5px 3px yellow;
+    position: relative;
+    z-index: 2;
+}
+
+
+
+.body2{
+    animation:glow2 1s infinite;
+}
+@keyframes glow2{
+    0%{
+        background-color:yellow;
+    }
+    25%{
+    background-color:orange;
+    }
+    75%{
+        background-color:darkorange;
+    }
+    100%{
+        background:linear-gradient(45deg, rgba(184,148 ,49,.5),#FFFC3B,rgba(184,148 ,49,.5),#C9B52C,#B89438);
+	}
+    
+}
+/* firefly3 */
+.firefly3{
+    margin-left:30px;
+    margin-top:120px;
+    animation:fly3 5s infinite linear;
+    
+}
+@keyframes fly3{
+    0%{
+
+        transform:rotate(0deg)
+    
+        
+    }
+    30%{
+        transform:rotate(45deg);
+    
+    }
+    100%{
+        transform:rotate(120deg)
+    }
+    
+    
+    
+}
+.head3{
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    position: relative;
+    background:black;
+
+}
+
+.head3::before{
+    left: -34px;
+    border-right-color: transparent;
+    
+}
+.head3::after{
+    left: 38px;
+    border-left-color: transparent;
+}
+.body3{
+    width: 12px;
+    height: 30px;
+    border-radius: 50%;
+    box-shadow:0 0 5px 3px yellow;
+    position: relative;
+    z-index: 2;
+}
+
+
+
+.body3{
+    animation:glow3 1s infinite;
+}
+@keyframes glow3{
+    0%{
+        background-color:yellow;
+    }
+    25%{
+    background-color:orange;
+    }
+    75%{
+        background-color:darkorange;
+    }
+    100%{
+        background:linear-gradient(45deg, rgba(184,148 ,49,.5),#FFFC3B,rgba(184,148 ,49,.5),#C9B52C,#B89438);
+	}
+    
+}
+/* firefly4 */
+.firefly4{
+    margin-left:200px;
+    margin-top:-30px;
+    animation:fly4 6s infinite linear;
+    
+}
+@keyframes fly4{
+    0%{
+
+        transform:rotate(0deg)
+    
+        
+    }
+    30%{
+        transform:rotate(-40deg);
+    
+    }
+    
+    
+    
+}
+.head4{
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    position: relative;
+    background:black;
+
+}
+
+.head4::before{
+    left: -34px;
+    border-right-color: transparent;
+    
+}
+.head4::after{
+    left: 38px;
+    border-left-color: transparent;
+   
+}
+.body4{
+    width: 12px;
+    height: 30px;
+    border-radius: 50%;
+    box-shadow:0 0 5px 3px yellow;
+    position: relative;
+    z-index: 2;
+}
+
+
+
+
+.body4{
+    animation:glow4 1s infinite;
+}
+@keyframes glow4{
+    0%{
+        background-color:yellow;
+    }
+    25%{
+    background-color:orange;
+    }
+    75%{
+        background-color:darkorange;
+    }
+    100%{
+        background:linear-gradient(45deg, rgba(184,148 ,49,.5),#FFFC3B,rgba(184,148 ,49,.5),#C9B52C,#B89438);
+	}
+    
+}
+/* firefly5 */
+
+.firefly5{
+    margin-left:300px;
+    margin-top:-100px;
+    animation:fly5 7s infinite linear;
+    
+}
+@keyframes fly5{
+    0%{
+
+        transform:rotate(0deg)
+    
+        
+    }
+    30%{
+        transform:rotate(-60deg);
+    
+    }
+    60%{
+        transform:rotate(-70deg);
+    }
+    
+}
+
+.head5{
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    position: relative;
+    background:black;
+
+}
+
+.head5::before{
+    left: -34px;
+    border-right-color: transparent;
+    
+}
+.head5::after{
+    left: 38px;
+    border-left-color: transparent;
+}
+.body5{
+    width: 12px;
+    height: 30px;
+    border-radius: 50%;
+    box-shadow:0 0 5px 3px yellow;
+    position: relative;
+    z-index: 2;
+}
+
+    
+    
+
+.body5{
+    animation:glow5 1s infinite;
+}
+@keyframes glow5{
+    0%{
+        background-color:yellow;
+    }
+    25%{
+    background-color:orange;
+    }
+    
+    75%{
+        background-color:darkorange;
+    }
+    100%{
+        background:linear-gradient(45deg, rgba(184,148 ,49,.5),#FFFC3B,rgba(184,148 ,49,.5),#C9B52C,#B89438);
+	}
+    
+}
+/* dots */
+.star1,.star2,.star3,.star4,.star5,.star6,.star7,.star8,.star9,.star10{
+
+    border-radius:50%;
+    width:.4rem;
+    height:.4rem;
+    box-shadow:0 0 5px 3px yellow;
+    position:absolute;
+    background-color:yellow;
+    
+    
+    
+}
+.star1,.star2,.star5,.star6,.star9,.star10{
+    animation:stars 1s ease infinite alternate;
+    
+}
+.star3,.star4,.star7,.star8,.star9,.star2{
+    animation:starss 2s ease infinite alternate;
+    
+}
+
+@keyframes stars{
+    from {opacity:0.6;}
+    to {opacity:0.1;}
+    
+}
+
+@keyframes starss{
+    from {opacity:0.7;}
+    to {opacity:0.1;}
+    
+}
+
+.star1{
+    right:60%;
+    top:70%;
+}
+.star2{
+    right:40%;
+    top:46%;
+}
+.star3{
+    right:40%;
+    top:50%;
+}
+.star4{
+    left:50%;
+    top:50%;
+}
+.star5{
+    left:40%;
+    top:40%;
+}
+.star6{
+    left:40%;
+    top:55%;
+}
+.star7{
+    left:44%;
+    top:58%;
+}
+.star7{
+    left:44%;
+    top:48%;
+}
+.star7{
+    left:44%;
+    top:88%;
+}
+.star8{
+    left:50%;
+    top:78%;
+}
+.star9{
+    left:55%;
+    top:82%;
+}
+.star10{
+    left:55%;
+    top:62%;
+}
+.star11{
+    left:41%;
+    top:98%;
+}
+/* butterfly */
+
