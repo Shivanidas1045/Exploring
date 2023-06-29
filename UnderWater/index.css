@@ -1,0 +1,380 @@
+body{
+    background-color:#119dff;
+}
+/* bubbles animation */
+/* main div */
+.bubblez{
+    background:linear-gradient(180deg,#04fafd 5%,#119dff 50%,#030423);
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+/* bubblees div */
+.bubblez>div{
+    height:50px;
+    width:50px;
+    border:2px solid white;
+    border-radius:50px;
+    position:absolute;
+    top:10%;
+    left:10%;
+    animation:5s linear infinite;
+}
+/* dot inside bubble */
+div .bubble{
+    height:10px;
+    width:10px;
+    border-radius:10px;
+    background:rgba(255,255,255,0.5);
+    position:absolute;
+    top:30%;
+    left:25%;
+
+}
+
+/* each bubble animation  */
+.bubblez div:nth-child(1){
+    top:22%;
+    left:22%;
+    animation:moving 10s linear infinite;
+}
+.bubblez div:nth-child(2){
+    top:42%;
+    left:52%;
+    animation: moving 9s linear infinite;
+}
+.bubblez div:nth-child(3){
+    top:12%;
+    left:32%;
+    animation:moving 7s linear infinite;
+}
+.bubblez div:nth-child(4){
+    top:62%;
+    left:62%;
+    animation:moving 8s linear infinite;
+}
+.bubblez div:nth-child(5){
+    top:82%;
+    left:52%;
+    animation:moving 4s linear infinite;
+}
+.bubblez div:nth-child(6){
+    top:92%;
+    left:62%;
+    animation:moving 10s linear infinite;
+}
+.bubblez div:nth-child(7){
+    top:42%;
+    left:62%;
+    animation:moving 4s linear infinite;
+}
+.bubblez div:nth-child(8){
+    top:42%;
+    left:42%;
+    animation:moving 5s linear infinite;
+}
+.bubblez div:nth-child(9){
+    top:52%;
+    left:22%;
+    animation:moving 9s linear infinite;
+}
+.bubblez div:nth-child(10){
+    top:82%;
+    left:52%;
+    animation:moving 3s linear infinite;
+}
+.bubblez div:nth-child(11){
+    top:42%;
+    left:32%;
+    animation:moving 12s linear infinite;
+}
+.bubblez div:nth-child(12){
+    top:62%;
+    left:67%;
+    animation:moving 11s linear infinite;
+}
+.bubblez div:nth-child(13){
+    top:43%;
+    left:20%;
+    animation:moving 2s linear infinite;
+}
+.bubblez div:nth-child(14){
+    top:91%;
+    left:47%;
+    animation: moving 9s linear infinite;
+}
+.bubblez div:nth-child(15){
+    top:53%;
+    left:53%;
+    animation: moving 10s linear infinite;
+}
+.bubblez div:nth-child(16){
+    top:71%;
+    left:33%;
+    animation: moving 8s linear infinite;
+}
+
+/* animation of bubbles */
+@keyframes moving{
+    0%{
+        transform:scale(0) translateY(0) rotate(60deg)
+    }
+    
+    100%{
+        transform:scale(1.3) translateY(-100px) rotate(360deg)
+    }
+}
+
+/* fish */
+.fish{
+    width:100px;
+    height:70px;
+    animation: swim1 10s linear infinite;
+}
+.fbody{
+    position:absolute;
+    margin-top:100px;
+    margin-left:60px;
+    background-color:chartreuse;
+    width:100px;
+    height:70px;
+    border-radius:50%;
+}
+.eye{
+    position:absolute;
+    margin-left:60px;
+    margin-top:20px;
+    z-index:1;
+    background-color:black;
+    border-radius:50%;
+    width:15px;
+    height:15px;
+}
+.pupil{
+    position:absolute;
+    z-index:2;
+    margin-left:5px;
+    margin-top:2px;
+    background-color:pink;
+    border-radius:50%;
+    height:6px;
+    width:6px;
+}
+.fin{
+    background-color:chartreuse;
+    border-radius: 13% 87% 22% 78% / 32% 90% 10% 68%;
+    transform:rotate(40deg);
+    width:80px;
+    height:50px;
+}
+
+.upper-fin{
+    width:60px;
+    height:50px;
+    border-radius:39% 61% 0% 100%;
+    background-color:chartreuse;
+    transform:rotate(-20deg);
+    position:absolute;
+    top:-3px;
+    left:-50px;
+}
+@keyframes swim1 {
+    from {
+      transform: translateX(0%);
+    }
+  
+    to {
+      transform: translateX(700%);
+    }
+  }
+/* second fish */
+/* fish */
+.fish2{
+    width:100px;
+    height:70px;
+    animation: swim2 15s linear infinite;
+}
+.fbody2{
+    position:absolute;
+    margin-top:200px;
+    margin-left:90px;
+    background-color:violet;
+    width:100px;
+    height:70px;
+    border-radius:50%;
+}
+.eye2{
+    position:absolute;
+    margin-left:60px;
+    margin-top:20px;
+    z-index:1;
+    background-color:black;
+    border-radius:50%;
+    width:15px;
+    height:15px;
+}
+.pupil2{
+    position:absolute;
+    z-index:2;
+    margin-left:5px;
+    margin-top:2px;
+    background-color:pink;
+    border-radius:50%;
+    height:6px;
+    width:6px;
+}
+.fin2{
+    background-color:violet;
+    border-radius: 13% 87% 22% 78% / 32% 90% 10% 68%;
+    transform:rotate(40deg);
+    width:80px;
+    height:50px;
+}
+
+.upper-fin2{
+    width:60px;
+    height:50px;
+    border-radius:39% 61% 0% 100%;
+    background-color:violet;
+    transform:rotate(-20deg);
+    position:absolute;
+    top:-3px;
+    left:-50px;
+}
+@keyframes swim2 {
+    from {
+      transform: translateX(0%);
+    }
+  
+    to {
+      transform: translateX(700%);
+    }
+  }
+/* fish3 */
+
+.fish3{
+    width:100px;
+    height:70px;
+    animation: swim3 8s linear infinite;
+}
+.fbody3{
+    position:absolute;
+    margin-top:80px;
+    margin-left:300px;
+    background-color:orangered;
+    width:100px;
+    height:70px;
+    border-radius:50%;
+}
+.eye3{
+    position:absolute;
+    margin-left:60px;
+    margin-top:20px;
+    z-index:1;
+    background-color:black;
+    border-radius:50%;
+    width:15px;
+    height:15px;
+}
+.pupil3{
+    position:absolute;
+    z-index:2;
+    margin-left:5px;
+    margin-top:2px;
+    background-color:pink;
+    border-radius:50%;
+    height:6px;
+    width:6px;
+}
+.fin3{
+    background-color:orangered;
+    border-radius: 13% 87% 22% 78% / 32% 90% 10% 68%;
+    transform:rotate(40deg);
+    width:80px;
+    height:50px;
+}
+
+.upper-fin3{
+    width:60px;
+    height:50px;
+    border-radius:39% 61% 0% 100%;
+    background-color:orangered;
+    transform:rotate(-20deg);
+    position:absolute;
+    top:-3px;
+    left:-50px;
+}
+
+@keyframes swim3 {
+    from {
+      transform: translateX(0%);
+    }
+  
+    to {
+      transform: translateX(600%);
+    }
+  }
+/* fish four */
+
+.fish4{
+    width:100px;
+    height:70px;
+    animation: swim4 6s linear infinite;
+}
+.fbody4{
+    position:absolute;
+    margin-top:190px;
+    margin-left:300px;
+    background-color:yellow;
+    width:100px;
+    height:70px;
+    border-radius:50%;
+}
+.eye4{
+    position:absolute;
+    margin-left:60px;
+    margin-top:20px;
+    z-index:1;
+    background-color:black;
+    border-radius:50%;
+    width:15px;
+    height:15px;
+}
+.pupil4{
+    position:absolute;
+    z-index:2;
+    margin-left:5px;
+    margin-top:2px;
+    background-color:pink;
+    border-radius:50%;
+    height:6px;
+    width:6px;
+}
+.fin4{
+    background-color:yellow;
+    border-radius: 13% 87% 22% 78% / 32% 90% 10% 68%;
+    transform:rotate(40deg);
+    width:80px;
+    height:50px;
+}
+
+.upper-fin4{
+    width:60px;
+    height:50px;
+    border-radius:39% 61% 0% 100%;
+    background-color:yellow;
+    transform:rotate(-20deg);
+    position:absolute;
+    top:-3px;
+    left:-50px;
+}
+
+@keyframes swim4 {
+    from {
+      transform: translateX(0%);
+    }
+  
+    to {
+      transform: translateX(700%);
+    }
+  }
